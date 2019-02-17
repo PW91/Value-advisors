@@ -1,0 +1,456 @@
+// IMPORTS:
+
+@import "node_modules/normalize.css/normalize";
+
+// FONTS:
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope-extrabold.woff2") format("woff2"),
+    /* Modern browsers */ url("../fonts/manrope-extrabold.woff") format("woff"),
+    /* Legacy browsers */ url("../fonts/manrope-extrabold.otf")
+      format("truetype"); /* Android, iOS */
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope-bold.woff2") format("woff2"),
+    url("../fonts/manrope-bold.woff") format("woff"),
+    url("../fonts/manrope-bold.otf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope-semibold.woff2") format("woff2"),
+    url("../fonts/manrope-semibold.woff") format("woff"),
+    url("../fonts/manrope-semibold.otf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope-medium.woff2") format("woff2"),
+    url("../fonts/manrope-medium.woff") format("woff"),
+    url("../fonts/manrope-medium.otf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope-regular.woff2") format("woff2"),
+    url("../fonts/manrope-regular.woff") format("woff"),
+    url("../fonts/manrope-regular.otf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope-light.woff2") format("woff2"),
+    url("../fonts/manrope-light.woff") format("woff"),
+    url("../fonts/manrope-light.otf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope-thin.woff2") format("woff2"),
+    url("../fonts/manrope-thin.woff") format("woff"),
+    url("../fonts/manrope-thin.otf") format("truetype");
+  font-style: normal;
+  font-weight: 200;
+}
+
+// TYPO:
+
+.h1 {
+  font-size: 7vw;
+  margin: 0;
+}
+
+.h2 {
+  font-size: 2.2vw;
+  line-height: 3.2vw;
+  font-weight: 400;
+  letter-spacing: 0.07vw;
+  margin: 0;
+}
+
+.h3 {
+  font-size: 1.2vw;
+  letter-spacing: 0.07vw;
+  font-weight: 400;
+  margin: 0;
+}
+
+.h4 {
+  font-size: 1.5vw;
+  line-height: 2.1vw;
+  margin: 0;
+}
+
+.h5 {
+  font-size: 1.3vw;
+}
+
+.h6 {
+  font-size: 0.9vw;
+  margin: 0;
+}
+
+.p {
+  font-size: 1.1vw;
+  margin: 0;
+
+  .bold {
+  }
+}
+
+.bold {
+}
+
+// GLOBAL:
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+// GRID:
+
+.left-column {
+  position: fixed;
+  left: 2vw;
+  top: 2vw;
+  bottom: 2vw;
+  width: 18vw;
+  padding: 2vw 1vw;
+}
+
+.right-column {
+  margin-left: 20vw;
+  width: 78vw;
+}
+
+// LAYOUT:
+
+.section {
+  width: 100%;
+  //display: flex;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  border: 2px solid black;
+}
+
+.flex-container {
+  display: flex;
+
+  &--space-between {
+    @extend .flex-container;
+    justify-content: space-between;
+  }
+}
+
+.frame {
+  border: 2vw solid #4b4b4b;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  pointer-events: none;
+}
+
+.frame-content {
+  padding: 2vw 2vw 2vw 0;
+}
+
+// NAV
+
+.nav {
+  margin-top: 3vw;
+  border-left: 2px solid black;
+  padding-left: 2vw;
+
+  &-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  &-item {
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 1vw 0;
+    letter-spacing: 0.1vw;
+    position: relative;
+
+    &:hover {
+      opacity: 0.75;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    &.active {
+      font-weight: 700;
+
+      &:after {
+        content: "";
+        width: 100%;
+        position: absolute;
+        height: 1vw;
+        background-color: #b0c9ce;
+        left: 0;
+        z-index: -1;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+// SECTION HELLO:
+
+.hello-box {
+  width: 43vw;
+  border: 1px solid black;
+}
+
+.hello-img {
+  width: 100px;
+}
+
+.hello-right-box {
+  background-color: #ccdee2;
+  height: 100px;
+  width: 100px;
+}
+
+.hello-back-box {
+  background-color: #b0c9ce;
+  height: 100px;
+  width: 100px;
+}
+
+// SECTION ABOUT:
+
+.about-box-header {
+  background-color: #fdeecf;
+  text-align: center;
+}
+
+.about-box {
+  background-color: #fff6e5;
+  padding: 3vw;
+}
+
+.about-img {
+  width: 40vw;
+}
+
+// SECTION OFFER:
+
+.offer-right-box {
+  background-color: #e5eff0;
+  width: 100px;
+  height: 100px;
+}
+
+.offer-box-header {
+  background-color: #b0c9ce;
+}
+
+// SECTION EXP:
+
+.exp-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.exp-box {
+  text-align: center;
+
+  &-1 {
+    background-color: #b0c9ce, 5;
+    opacity: 0.5;
+  }
+
+  &-2 {
+    background-color: #fdeecf;
+  }
+
+  &-3 {
+    background-color: #fdeecf;
+    opacity: 0.5;
+  }
+
+  &-4 {
+    background-color: #b0c9ce;
+  }
+
+  &-5 {
+    background-color: #d7e4e7;
+    opacity: 0.4;
+  }
+}
+
+// SECTION CLIENTS:
+
+.clients-box-header {
+  background-color: #b0c9ce;
+}
+
+.clients-right-box {
+  background-color: #e5eff0;
+  width: 100px;
+  height: 100px;
+}
+
+// SECTION CONTACT:
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-box {
+  &-1 {
+    background-color: #fdeecf;
+  }
+
+  &-2 {
+    background-color: #fdeecf;
+    opacity: 0.5;
+  }
+
+  &-3 {
+    background-color: #fdeecf;
+    opacity: 0.5;
+  }
+
+  &-4 {
+    background-color: #fdeecf;
+    opacity: 0.5;
+  }
+
+  &-5 {
+    img {
+      width: 100%;
+    }
+  }
+
+  &-6 {
+    background-color: #b0c9ce;
+  }
+}
+
+@media (max-width: 991px) {
+  // TYPO:
+
+  .h1 {
+    font-size: 6vw;
+    line-height: 6vw;
+  }
+
+  .h2 {
+    font-size: 3.2vw;
+  }
+
+  .h3 {
+    font-size: 4vw;
+    left: -250%;
+  }
+
+  .h4 {
+    font-size: 2.4vw;
+    margin: 2vw 0 1vw 0;
+  }
+
+  .h5 {
+    font-size: 3.5vw;
+  }
+
+  .h6 {
+    font-size: 2.5vw;
+    line-height: 4vw;
+  }
+
+  .p {
+    font-size: 4vw;
+    line-height: 6vw;
+
+    .bold {
+      font-size: 4.2vw;
+      letter-spacing: 0.03vw;
+    }
+  }
+
+  .bold {
+    font-size: 8vw;
+  }
+
+  // GRID:
+
+  .right-column {
+    margin-left: 4vw;
+  }
+
+  // LAYOUT:
+
+  .frame {
+    border-top-width: 60px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  .section-content-wrap {
+    max-width: 50vw;
+  }
+
+  // NAV:
+
+  .nav {
+    top: 0;
+    transform: none;
+    z-index: 9999;
+    width: 100vw;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-list {
+    margin-top: 20px;
+  }
+
+  .nav-item {
+    display: inline-block;
+    margin: 0 3px;
+    font-size: 1em;
+  }
+
+  // SECTION ABOUT:
+
+  // SECTION EXP:
+
+  // SECTION SKILLS:
+
+  // SECTION CONTACT:
+}

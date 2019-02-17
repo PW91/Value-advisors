@@ -1,0 +1,153 @@
+{% extends '_layouts/base.nunjucks' %}
+{% block content %}
+<div class='frame'></div>
+<div class='frame-content'>
+    <div class='left-column'>
+        <img src='images/logo.png' />
+        <nav class='nav'>
+            <ul class='nav-list'>
+                <li class='nav-item nav-item-hello active'><a href='#hello'>Powitanie</a></li>
+                <li class='nav-item nav-item-about'><a href='#about'>O nas</a></li>
+                <li class='nav-item nav-item-offer'><a href='#offer'>Oferta</a></li>
+                <li class='nav-item nav-item-exp'><a href='#exp'>Doświadczenie</a></li>
+                <li class='nav-item nav-item-clients'><a href='#clients'>Klienci</a></li>
+                <li class='nav-item nav-item-contact'><a href='#contact'>Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class='right-column'>
+        <section class='section section-hello' id='hello'>
+            <img src='images/hello1.png' class='hello-img'/>
+            <div class='hello-box'>
+                <h2 class='h2'>Specjalistyczne wyceny <strong>przedsiębiorstw</strong> i instrumentów <strong>finansowych</strong> oraz <strong>doradztwo gospodarcze</strong></h2>
+            </div>
+            <div class='hello-right-box'></div>
+            <div class='hello-back-box'></div>
+            <img src='images/x.png' class='hello-x'/>
+            <img src='images/o.png' class='hello-o'/>
+        </section>
+        <section class='section section-about' id='about'>
+            <img src='images/about.png' class='about-img'/>
+             <img src='images/o.png' class='about-o'/>
+            <div class='about-box-header'>
+            <h2 class='h2'><strong>Specjalizujemy się w:</strong></h2>
+            </div>
+            <div class='flex-container--space-between'>
+                <div class='about-box'>
+                    <img src='images/model.png'/>
+                    <h3 class='h3'>Modelowaniu finansowym</h3>
+                </div>
+                <div class='about-box'>
+                    <img src='images/management.png'/>
+                    <h3 class='h3'>Zarządzaniu przepływem informacji</h3>
+                </div>
+                <div class='about-box'>
+                    <img src='images/pricing.png'/>
+                    <h3 class='h3'>Wycenach dla funduszy</h3>
+                </div>
+            </div>
+        </section>
+        <section class='section section-offer' id='offer'>
+            <div class='offer-right-box'></div>
+            <div class='offer-box-header'>
+                <h2 class='h2'><strong>Świadczymy usługi z zakresu:</strong></h2>
+            </div>
+            <img src='images/x.png' class='offer-x'/>
+            <ul>
+                <li class='p'>Budowaniu modeli finansowych i prowadzenia due dilligence finansowego</li>
+                <li class='p'>Wyceny przedsiębiorstw, instrumentów dłużnych i pochodnych do celów zarządczych i księgowych</li>
+                <li class='p'>Weryfikacji wycen i modeli finansowych na potrzeby TFI i depozytariuszy</li>
+                <li class='p'>Niezależnej cyklicznej wyceny przedsiębiorstw, wierzytelności, instrumentów finansowych na potrzeby funduszy inwestycyjnych i alternatywnych spółek inwestycyjnych</li>
+            </ul>
+            <img src='images/laptop.png'/>
+            <img src='images/procent.png'/>
+        </section>
+        <section class='section section-exp' id='exp'>
+            <img src='images/x.png' class='exp-x'/>
+            <img src='images/o.png' class='exp-o'/>
+            <div class='exp-container'>
+                <div class='exp-box exp-box-1'>
+                    <h6 class='h6'>Do tej pory zrealizowaliśmy wyceny na potrzeby ponad</h6>
+                    <h1 class='h1'>100</h1>
+                    <h6 class='h6'>funduszy otwartych i zamkniętych</h6>
+                </div>
+                <div class='exp-box exp-box-2'>
+                    <h6 class='h6'>Współpraca z ponad</h6>
+                    <h1 class='h1'>20%</h1>
+                    <h6 class='h6'>TFI w Polsce</h6>
+                </div>
+                <div class='exp-box exp-box-3'>
+                    <h6 class='h6'>Cykliczna wycena</h6>
+                    <h1 class='h1'>500+</h1>
+                    <h6 class='h6'>lokat funduszy</h6>
+                </div>
+                <div class='exp-box exp-box-4'>
+                    <h6 class='h6'>Współpraca z około</h6>
+                    <h1 class='h1'>100</h1>
+                    <h6 class='h6'>członków rady banków depozytariuszy</h6>
+                </div>
+                <div class='exp-box exp-box-5'>
+                    <h6 class='h6'>Ponad</h6>
+                    <h1 class='h1'>10</h1>
+                    <h6 class='h6'>lat współpracy z TFI</h6>
+                </div>
+            </div>
+        </section>
+        <section class='section section-clients' id='clients'>
+            <div class='clients-box-header'>
+                <h2 class='h2'><strong>Zaufali nam:</strong></h2>
+            </div>
+                 <div class='clients-right-box'></div>
+                <img src='images/rockbridge.png' class='client-logo'/>
+                <img src='images/pfr.png' class='client-logo'/>
+                <img src='images/mount.png' class='client-logo'/>
+                <img src='images/skarbiec.png' class='client-logo'/>
+                <img src='images/ipopema.png' class='client-logo'/>
+                <img src='images/ms.png' class='client-logo'/>
+                <img src='images/ib.png' class='client-logo'/>
+                <img src='images/energia.png' class='client-logo'/>
+                <img src='images/raiffeisen.png' class='client-logo'/>
+                <img src='images/alior.png' class='client-logo'/>
+                <img src='images/altus.png' class='client-logo'/>
+                <img src='images/deutschebank.png' class='client-logo'/>
+                <img src='images/fip.png' class='client-logo'/>
+   
+
+        </section>
+        <section class='section section-contact' id='contact'>
+            <div class='contact-container'>
+                <div class='contact-box contact-box-1'>
+                    <p class='p'>Biuro:</p>
+                    <h4 class='h4'>ul. Ostrobramska 126 lok. 26</h4>
+                    <h4 class='h4'>04-026 Warszawa</h4>
+                </div>
+                <div class='contact-box contact-box-2'>
+                    <p class='p'>Value Advisors Sp. z o.o.</p>
+                    <p class='p'><strong>NIP: 9522145972</strong></p>
+                    <p class='p'><strong>REGON: 364170993</strong></p>
+                    <p class='p'><strong>KRS: 0000611682</strong></p>
+                </div>
+                <div class='contact-box contact-box-3'>
+                    <p class='p'>Value Advisors Spółka z o.o. Sp. k.</p>
+                    <p class='p'><strong>NIP: 9522062080</strong></p>
+                    <p class='p'><strong>REGON: 141697836</strong></p>
+                    <p class='p'><strong>KRS: 0000626191</strong></p>
+                </div>
+                <div class='contact-box contact-box-4'>
+                    <p class='p'>Siedziba:</p>
+                    <p class='p'><strong>ul. Licealna 43</strong></p>
+                    <p class='p'><strong>04-424 Warszawa</strong></p>
+                </div>
+                  <div class='contact-box contact-box-5'>
+                    <img src='images/contact1.png'/>
+                </div>
+                <div class='contact-box contact-box-6'>
+                    <h4 class='h4'>22 400 22 16</h4>
+                    <h4 class='h4'>kontakt@valueadvisors.pl</h4>
+                </div>
+            </div>
+            <img src='images/x.png' class='contact-x'/>
+        </section>
+    </div>
+</div>
+{% endblock %}
