@@ -2,44 +2,46 @@
 
 import SmoothScroll from "./smoothscroll";
 
-(() => {
-  /*const navDotEl = document.getElementsByClassName("nav-dot")[0];
+/*(() => {
+  //const navDotEl = document.getElementsByClassName("nav-dot")[0];
 
   const helloNavEl = document.getElementsByClassName("nav-item-hello")[0];
   const aboutNavEl = document.getElementsByClassName("nav-item-about")[0];
+  const offerNavEl = document.getElementsByClassName("nav-item-offer")[0];
   const expNavEl = document.getElementsByClassName("nav-item-exp")[0];
-  const skillsNavEl = document.getElementsByClassName("nav-item-skills")[0];
+  const clientsNavEl = document.getElementsByClassName("nav-item-clients")[0];
   const contactNavEl = document.getElementsByClassName("nav-item-contact")[0];
 
   const helloSectionEl = document.getElementsByClassName("section-hello")[0];
   const aboutSectionEl = document.getElementsByClassName("section-about")[0];
+  const offerSectionEl = document.getElementsByClassName("section-offer")[0];
   const expSectionEl = document.getElementsByClassName("section-exp")[0];
-  const skillsSectionEl = document.getElementsByClassName("section-skills")[0];
+  const clientsSectionEl = document.getElementsByClassName("section-clients")[0];
   const contactSectionEl = document.getElementsByClassName(
     "section-contact"
   )[0];
 
-  const slideHelloEl = document.getElementsByClassName("slide-hello")[0];
+  /*const slideHelloEl = document.getElementsByClassName("slide-hello")[0];
   const slideAboutEl = document.getElementsByClassName("slide-about")[0];
   const slideExpEl = document.getElementsByClassName("slide-exp")[0];
   const slideSkillsEl = document.getElementsByClassName("slide-skills")[0];
   const slideContactEl = document.getElementsByClassName("slide-contact")[0];
 
-  const helloImgEl = document.getElementsByClassName("hello-img")[0];
+  const helloImgEl = document.getElementsByClassName("hello-img")[0];*/
 
-  const deviceType = window.innerWidth > 991 ? "desktop" : "mobile";
+  /*const deviceType = window.innerWidth > 991 ? "desktop" : "mobile";
   let scrollingDest = "";
 
   function scrollingAnimation() {
     const scroll = window.scrollY - window.innerHeight / 2;
 
-    if (scroll > skillsSectionEl.offsetTop) {
+    if (scroll > offerSectionEl.offsetTop) {
       if (scrollingDest !== "contact") {
         setFlag("contact");
         removeCssClasses();
         addClass(slideContactEl);
         addClass(contactNavEl);
-        dotAnimation(deviceType, "12.6vw", "1140%");
+        //dotAnimation(deviceType, "12.6vw", "1140%");
       }
     } else if (scroll > expSectionEl.offsetTop) {
       if (scrollingDest !== "exp") {
@@ -47,7 +49,7 @@ import SmoothScroll from "./smoothscroll";
         removeCssClasses();
         addClass(slideSkillsEl);
         addClass(skillsNavEl);
-        dotAnimation(deviceType, "9.85vw", "430%");
+        //dotAnimation(deviceType, "9.85vw", "430%");
       }
     } else if (scroll > aboutSectionEl.offsetTop) {
       if (scrollingDest !== "skills") {
@@ -55,7 +57,7 @@ import SmoothScroll from "./smoothscroll";
         removeCssClasses();
         addClass(slideExpEl);
         addClass(expNavEl);
-        dotAnimation(deviceType, "7.15vw", "-130%");
+        //dotAnimation(deviceType, "7.15vw", "-130%");
       }
     } else if (scroll > helloSectionEl.offsetTop) {
       if (scrollingDest !== "about") {
@@ -63,7 +65,7 @@ import SmoothScroll from "./smoothscroll";
         removeCssClasses();
         addClass(slideAboutEl);
         addClass(aboutNavEl);
-        dotAnimation(deviceType, "4.45vw", "-670%");
+       // dotAnimation(deviceType, "4.45vw", "-670%");
       }
     } else {
       if (scrollingDest !== "hello") {
@@ -72,21 +74,21 @@ import SmoothScroll from "./smoothscroll";
         addClass(slideHelloEl);
         addClass(helloNavEl);
 
-        dotAnimation(deviceType, "1.75vw", "-1340%");
+       // dotAnimation(deviceType, "1.75vw", "-1340%");
       }
     }
   }
 
-  function moveHelloImg() {
+  /*function moveHelloImg() {
     const ratio = window.innerWidth / window.innerHeight;
     if (ratio > 1.9) {
       helloImgEl.style.bottom = ratio * -8 + "vh";
     } else {
       helloImgEl.style.bottom = "0";
     }
-  }
+  }*/
 
-  function dotAnimation(deviceType, positionDesktop, positionMobile) {
+  /*function dotAnimation(deviceType, positionDesktop, positionMobile) {
     switch (deviceType) {
       case "desktop":
         moveDotTopDown(positionDesktop);
@@ -95,17 +97,17 @@ import SmoothScroll from "./smoothscroll";
         moveDotLeftRight(positionMobile);
         break;
     }
-  }
+  }*/
 
-  function moveDotTopDown(position) {
+  /*function moveDotTopDown(position) {
     navDotEl.style.top = position;
   }
 
   function moveDotLeftRight(position) {
     navDotEl.style.transform = "translateX(" + position + ")";
-  }
+  }*/
 
-  function addClass(el) {
+ /* function addClass(el) {
     el.classList.add("active");
   }
 
@@ -114,22 +116,23 @@ import SmoothScroll from "./smoothscroll";
   }
 
   function removeCssClasses() {
-    slideHelloEl.classList.remove("active");
+    /*slideHelloEl.classList.remove("active");
     slideAboutEl.classList.remove("active");
     slideExpEl.classList.remove("active");
     slideSkillsEl.classList.remove("active");
-    slideContactEl.classList.remove("active");
-    helloNavEl.classList.remove("active");
+    slideContactEl.classList.remove("active");*/
+  /*  helloNavEl.classList.remove("active");
     aboutNavEl.classList.remove("active");
+    offerNavEl.classList.remove('active');
     expNavEl.classList.remove("active");
-    skillsNavEl.classList.remove("active");
+    clientsNavEl.classList.remove("active");
     contactNavEl.classList.remove("active");
   }
 
-  moveHelloImg();
+  //moveHelloImg();
 
   document.addEventListener("scroll", scrollingAnimation);
-  window.addEventListener("resize", moveHelloImg);*/
+  //window.addEventListener("resize", moveHelloImg);*/
 
-  const smoothScroll = new SmoothScroll('a[href*="#"]');
-})();
+ // const smoothScroll = new SmoothScroll('a[href*="#"]');
+//})();
