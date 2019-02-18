@@ -10,7 +10,7 @@
                 <li class='nav-item nav-item-about'><a href='#about'>O nas</a></li>
                 <li class='nav-item nav-item-offer'><a href='#offer'>Oferta</a></li>
                 <li class='nav-item nav-item-exp'><a href='#exp'>Doświadczenie</a></li>
-                <li class='nav-item nav-item-clients'><a href='#clients'>Klienci</a></li>
+                <!--<li class='nav-item nav-item-clients'><a href='#clients'>Klienci</a></li>-->
                 <li class='nav-item nav-item-contact'><a href='#contact'>Kontakt</a></li>
             </ul>
         </nav>
@@ -167,7 +167,7 @@
                             <p class='p'><strong>KRS: 0000611682</strong></p>
                         </div>
                         <div class='address-wrap'>
-                            <p class='p p-header'>Value Advisors Spółka z o.o. Sp. k.</p>
+                            <p class='p p-header'>Value Advisors<br/>Spółka z o.o. Sp. k.</p>
                             <p class='p'><strong>NIP: 9522062080</strong></p>
                             <p class='p'><strong>REGON: 141697836</strong></p>
                             <p class='p'><strong>KRS: 0000626191</strong></p>
@@ -184,8 +184,14 @@
 
                 <div class='contact-box contact-box-6'>
                     <div class='contact-box-wrap'>
+                    <div class='contact-el-wrap'>
+                    <img src='images/phone.png' class='phone-img'/>
                     <h4 class='h4'>22 400 22 16</h4>
+                    </div>
+                    <div class='contact-el-wrap'>
+                    <img src='images/email.png' class='email-img'/>
                     <h4 class='h4'>kontakt@valueadvisors.pl</h4>
+                    </div>
                     </div>
                 </div>
             </div>

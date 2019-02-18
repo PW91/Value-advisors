@@ -146,7 +146,6 @@ body {
 .right-column {
   margin-left: 25vw;
   width: 73vw;
-
 }
 
 // LAYOUT:
@@ -214,6 +213,18 @@ body {
     letter-spacing: 0.1vw;
     position: relative;
 
+    &:after {
+      content: "";
+      width: 0;
+      position: absolute;
+      height: 1vw;
+      background-color: #b0c9ce;
+      left: 0;
+      z-index: -1;
+      bottom: 0;
+      transition: width 300ms ease-in-out;
+    }
+
     &:hover {
       opacity: 0.75;
     }
@@ -227,14 +238,7 @@ body {
       font-weight: 700;
 
       &:after {
-        content: "";
         width: 100%;
-        position: absolute;
-        height: 1vw;
-        background-color: #b0c9ce;
-        left: 0;
-        z-index: -1;
-        bottom: 0;
       }
     }
   }
@@ -254,7 +258,6 @@ body {
   padding: 5vw 3vw;
   z-index: 9;
   position: relative;
-
 }
 
 .hello-img {
@@ -265,7 +268,6 @@ body {
   left: -30%;
   top: 50%;
   transform: translateY(-50%);
-
 }
 
 .hello-right-box {
@@ -292,7 +294,6 @@ body {
   height: 100%;
   top: 17%;
   left: 57%;
-
 }
 
 .hello-o {
@@ -354,18 +355,13 @@ body {
   left: -20px;
   top: -20px;
   z-index: -1;
-
 }
 
 .about-icon-img {
   margin-bottom: 0.5vw;
 }
 
-
-
 // SECTION OFFER:
-
-
 
 .offer-right-box {
   background-color: #e5eff0;
@@ -415,7 +411,7 @@ body {
     position: relative;
 
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       width: 20px;
       height: 2px;
@@ -442,8 +438,7 @@ body {
 }
 
 .exp-container {
-
- margin:  0 6% 0 0;
+  margin: 0 6% 0 0;
   height: 45vw;
   position: relative;
 }
@@ -464,8 +459,6 @@ body {
     height: 50%;
     top: 0;
     left: 0;
-
-
   }
 
   &-2 {
@@ -476,7 +469,7 @@ body {
   }
 
   &-3 {
-    background-color: #FFF6E5;
+    background-color: #fff6e5;
     // /opacity: 0.5;
     right: 0;
     top: 0;
@@ -545,10 +538,7 @@ body {
     width: 10vw;
     margin: 0 1vw;
   }
-
 }
-
-
 
 // SECTION CONTACT:
 
@@ -557,10 +547,9 @@ body {
 }
 
 .contact-container {
-  margin:  0 6% 0 0;
+  margin: 0 6% 0 0;
   height: 35vw;
   position: relative;
-  overflow: hidden;
 }
 
 .contact-addresses-container {
@@ -568,16 +557,18 @@ body {
   flex-wrap: wrap;
   //padding: 3vw 0;
   position: relative;
+  justify-content: space-between;
 }
 
 .address-wrap {
-  width: 50%;
- // margin: 1vw 0;
+  width: 48%;
+  margin-bottom: 2vw;
 }
 
 .contact-x {
   position: absolute;
-  bottom: 0;
+  bottom: -30%;
+  right: 100px;
 }
 
 .contact-box {
@@ -585,19 +576,24 @@ body {
   width: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  //justify-content: center;
+
+  .p {
+    line-height: 1.6vw;
+  }
 
   .p-header {
     opacity: 0.6;
     font-weight: 700;
+    margin-bottom: 0.5vw;
   }
-
 
   &-1 {
     background-color: #fdeecf;
     top: 0;
     left: 0;
     height: 30%;
+    padding: 0 3vw;
   }
 
   &-2 {
@@ -605,19 +601,17 @@ body {
     bottom: 0;
     left: 0;
     height: 70%;
-
+    padding: 0 3vw;
   }
 
   &-3 {
     background-color: rgba(253, 238, 207, 0.5);
     bottom: 0;
-
   }
 
   &-4 {
     background-color: rgba(253, 238, 207, 0.5);
     bottom: 0;
-
   }
 
   &-5 {
@@ -625,6 +619,7 @@ body {
     top: 0;
     right: 0;
     height: 50%;
+    overflow: hidden;
     img {
       width: 100%;
     }
@@ -635,8 +630,27 @@ body {
     bottom: 0;
     right: 0;
     height: 50%;
-
+    justify-content: center;
   }
+}
+
+.contact-el-wrap {
+  display: flex;
+  align-items: center;
+
+  .h4 {
+    font-weight: 800;
+  }
+}
+
+.email-img {
+  margin-right: 2vw;
+  width: 4vw;
+}
+
+.phone-img {
+  margin-right: 2vw;
+  width: 4vw;
 }
 
 @media (max-width: 991px) {
