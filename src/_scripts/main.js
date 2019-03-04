@@ -21,6 +21,18 @@ import SmoothScroll from "./smoothscroll";
     "section-contact"
   )[0];
 
+  const hamburgerEl = document.getElementsByClassName("hamburger")[0];
+  const mobileNavEl = document.getElementsByClassName("mobile-nav")[0];
+
+  hamburgerEl.addEventListener('click', function() {
+    if (mobileNavEl.classList.contains('active')) {
+      mobileNavEl.classList.remove('active')
+    } else {
+      mobileNavEl.classList.add('active')
+    }
+
+  })
+
   const deviceType = window.innerWidth > 991 ? "desktop" : "mobile";
   let scrollingDest = "";
 

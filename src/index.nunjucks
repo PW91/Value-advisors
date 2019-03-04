@@ -20,7 +20,11 @@
          <div class='mobile-flex'>
      <img src='images/logo.png' class='main-logo'/>
 
-     <div class='hamburger'>X</div>
+     <div class='hamburger'>
+        <div class='hamburger-line hamburger-line--top'></div>
+        <div class='hamburger-line hamburger-line--middle'></div>
+        <div class='hamburger-line hamburger-line--bottom'></div>
+     </div>
          </div>
     <nav class='mobile-nav'>
 
@@ -50,8 +54,9 @@
                  <img src='images/o.png' class='hello-o'/>
             </div>
             </div>
+            <div class='hello-img-wrap'>
                         <img src='images/hello1.png' class='hello-img'/>
-
+            </div>
             </div>
 
 
