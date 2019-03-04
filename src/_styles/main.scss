@@ -440,7 +440,7 @@ body {
 }
 
 .offer-list .p {
-  line-height: 4vw;
+  line-height: 2vw;
 }
 
 // SECTION EXP:
@@ -667,48 +667,52 @@ body {
 
 @media (max-width: 1000px) {
   .h1 {
-    font-size: 13vw;
+    font-size: 19vw;
     margin: 5vw 0;
   }
 
   .h2 {
-    font-size: 5vw;
-    line-height: 6vw;
+    font-size: 6vw;
+    line-height: 10vw;
   }
 
   .h3 {
-    font-size: 4vw;
+    font-size: 5vw;
+    line-height: 7vw;
   }
 
   .h4 {
-    font-size: 3vw;
-    line-height: 4vw;
+    font-size: 5vw;
+    line-height: 8vw;
+    font-weight: 800;
   }
 
   .h6 {
-    font-size: 3vw;
+    font-size: 4vw;
+    line-height: 6vw;
   }
 
   .p {
-    font-size: 3vw;
-    line-height: 3vw;
+    font-size: 5vw;
+    line-height: 5vw;
   }
 
   .h2--mobile {
     display: inline-block;
     position: relative;
-    margin: 3vw 0 8vw 0;
+    margin: 3vw 0 20vw 5vw;
     font-weight: 700;
+    font-size: 7vw;
 
     &:after {
       content: "";
-      width: 100%;
+      width: 105%;
       position: absolute;
-      height: 2vw;
+      height: 3vw;
       background-color: #b0c9ce;
       left: 0;
       z-index: -1;
-      bottom: 0;
+      bottom: 5%;
     }
 
 
@@ -728,7 +732,7 @@ body {
   }
 
   .section {
-    margin-bottom: 20vw;
+    margin-bottom: 30vw;
   }
 
   .frame {
@@ -763,8 +767,8 @@ body {
   }
 
   .hamburger {
-    width: 30px;
-    height: 30px;
+    width: 34px;
+    height: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -778,7 +782,7 @@ body {
   }
 
   .hamburger-line--middle {
-    width: 90%;
+    width: 85%;
   }
 
   .mobile-nav {
@@ -798,13 +802,17 @@ body {
   }
 
   .nav-list-mobile {
-    padding: 0;
+    padding: 5vw 0;
     margin: 0;
     box-shadow:0px 1px 1px 1px rgba(0,0,0,0.3);
 
     .nav-item {
       margin: 0;
-      padding: 3vw;
+      padding: 3vw 5vw;
+
+      &:after {
+        display: none;
+      }
     }
   }
 
@@ -812,13 +820,14 @@ body {
   // HELLO
 
   .section-hello {
-    overflow-x: hidden;
+
   }
 
   .section-hello .h2--mobile {
     position: absolute;
-    top: 5vw;
+    top: 10vw;
     left: 0;
+    z-index: 999;
   }
 
   .hello-x {
@@ -827,19 +836,24 @@ body {
 
   .hello-right-box {
     width: 70vw;
-    height:150vw;
-    padding: 35vw 0;
+    height:180vw;
+    padding: 50vw 0;
   }
 
   .hello-box {
-    width: 60vw;
+    width: 83vw;
     padding: 10vw;
   }
 
+  .hello-box-wrap {
+    left: -25vw;
+  }
+
   .hello-o {
-    bottom: 7vw;
-    left: 25vw;
+    bottom: 5vw;
+    left: 13vw;
     z-index: 99;
+    width: 10vw;
   }
 
   .hello-img {
@@ -850,38 +864,44 @@ body {
 
   .hello-img-wrap {
     position: absolute;
-    left: -100%;
-    top: 25vw;
-    width: 100vw;
-    height: 80vw;
+    left: -130%;
+    top: 35vw;
+    width: 130vw;
+    height: 100vw;
   }
 
   .hello-back-box {
-    left: 50%;
+    left: 77%;
     width: 100%;
+    top: 20%;
+    height: 90%;
   }
 
   // ABOUT
 
   .about-box-header {
-    padding: 7vw 0;
+    padding: 11vw 5vw;
+    margin-left: 6%;
+    margin-bottom: 15vw;
+
   }
 
   .about-o {
-    bottom: -20%;
-    top: auto;
+    left: -5%;
+    top: 82%;
+    width: 10vw;
   }
 
   .about-flex-container {
     display: block;
     margin: 0;
-    padding: 0 5vw;
+    padding: 0 6vw;
   }
 
   .about-box {
     width: 100%;
-    padding: 10vw 0;
-    margin: 5vw 0;
+    padding: 15vw 0;
+    margin: 7vw 0;
   }
 
   .about-img {
@@ -890,8 +910,13 @@ body {
 
   // OFFER
 
+  .offer-x {
+    top: -10%;
+    width: 15vw;
+  }
+
   .offer-box-header {
-    padding: 7vw 0;
+    padding: 11vw 5vw;
   }
 
   .flex-container--space-between {
@@ -903,7 +928,7 @@ body {
     order: 2;
 
     li {
-      margin: 5vw 0 0 5vw;
+      margin: 5vw 0 0 8vw;
       position: relative;
 
       &:before {
@@ -913,9 +938,14 @@ body {
         height: 2px;
         background-color: black;
         top: 50%;
-        left: -5%;
+        left: -8%;
       }
     }
+  }
+
+  .offer-list .p {
+    font-size: 4vw;
+    line-height: 6vw;
   }
 
   .offer-images-container {
@@ -941,13 +971,15 @@ body {
   }
 
   .exp-box {
-    display: block;
+    display: flex;
+    align-items: center;
     position: static;
     width: 100%;
     transform: none;
     height: auto;
-    padding: 10vw 0;
-    margin: 0 2vw;
+    padding: 10vw;
+    margin: 0 6vw;
+    min-height: 80vw;
   }
 
   .exp-x {
@@ -975,15 +1007,17 @@ body {
   .contact-box-6 {
     order: 1;
     justify-content: flex-start;
-    padding: 10vw 0;
+    padding: 15vw 5vw;
   }
 
   .phone-img {
-    width: 10vw;
+    width: 13vw;
+    margin-right: 5vw;
   }
 
   .email-img {
-    width: 10vw;
+    width: 13vw;
+    margin-right: 5vw;
   }
 
   .contact-box-5 {
@@ -999,25 +1033,34 @@ body {
 
   .contact-box-2 {
     order: 4;
-    padding: 10vw 0;
+    padding: 15vw 5vw;
   }
 
   .contact-box-1 {
     order: 3;
-    padding: 10vw 0;
+    padding: 15vw 5vw;
   }
 
   .contact-x {
-    top: -25%;
-    left: 75%;
+    top: -19%;
+    left: 80%;
     width: 15vw;
   }
 
   .address-wrap {
     width: 100%;
+    margin-bottom: 10vw;
   }
 
   .contact-box .p {
-    line-height: 5vw;
+    line-height: 8vw;
+  }
+
+  .contact-box .p-header {
+    font-size: 4vw;
+  }
+
+  .contact-box .p-header br {
+    display: none;
   }
 }

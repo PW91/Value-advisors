@@ -23,6 +23,7 @@ import SmoothScroll from "./smoothscroll";
 
   const hamburgerEl = document.getElementsByClassName("hamburger")[0];
   const mobileNavEl = document.getElementsByClassName("mobile-nav")[0];
+  const mobileNavLiEls = document.getElementsByClassName("nav-item-mobile")
 
   hamburgerEl.addEventListener('click', function() {
     if (mobileNavEl.classList.contains('active')) {
@@ -32,6 +33,12 @@ import SmoothScroll from "./smoothscroll";
     }
 
   })
+
+  for (var i = 0; i<mobileNavLiEls.length; i++) {
+    mobileNavLiEls[i].addEventListener('click', function() {
+      mobileNavEl.classList.remove('active')
+    })
+  }
 
   const deviceType = window.innerWidth > 991 ? "desktop" : "mobile";
   let scrollingDest = "";

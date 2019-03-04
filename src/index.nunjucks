@@ -30,12 +30,12 @@
 
 
                 <ul class='nav-list-mobile'>
-                <li class='nav-item nav-item-hello active'><a href='#hello'>Powitanie</a></li>
-                <li class='nav-item nav-item-about'><a href='#about'>O nas</a></li>
-                <li class='nav-item nav-item-offer'><a href='#offer'>Oferta</a></li>
-                <li class='nav-item nav-item-exp'><a href='#exp'>Doświadczenie</a></li>
-                <!--<li class='nav-item nav-item-clients'><a href='#clients'>Klienci</a></li>-->
-                <li class='nav-item nav-item-contact'><a href='#contact'>Kontakt</a></li>
+                <li class='nav-item nav-item-hello active nav-item-mobile'><a href='#hello'>Powitanie</a></li>
+                <li class='nav-item nav-item-about nav-item-mobile'><a href='#about'>O nas</a></li>
+                <li class='nav-item nav-item-offer nav-item-mobile'><a href='#offer'>Oferta</a></li>
+                <li class='nav-item nav-item-exp nav-item-mobile'><a href='#exp'>Doświadczenie</a></li>
+                <!--<li class='nav-item nav-item-clients nav-item-mobile'><a href='#clients'>Klienci</a></li>-->
+                <li class='nav-item nav-item-contact nav-item-mobile'><a href='#contact'>Kontakt</a></li>
             </ul>
     </nav>
     </div>
