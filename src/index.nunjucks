@@ -2,6 +2,7 @@
 {% block content %}
 <div class='frame'></div>
 <div class='frame-content'>
+
     <div class='left-column'>
         <img src='images/logo.png' class='main-logo'/>
         <nav class='nav'>
@@ -15,8 +16,28 @@
             </ul>
         </nav>
     </div>
+    <div class='mobile-bar'>
+         <div class='mobile-flex'>
+     <img src='images/logo.png' class='main-logo'/>
+
+     <div class='hamburger'>X</div>
+         </div>
+    <nav class='mobile-nav'>
+
+
+                <ul class='nav-list-mobile'>
+                <li class='nav-item nav-item-hello active'><a href='#hello'>Powitanie</a></li>
+                <li class='nav-item nav-item-about'><a href='#about'>O nas</a></li>
+                <li class='nav-item nav-item-offer'><a href='#offer'>Oferta</a></li>
+                <li class='nav-item nav-item-exp'><a href='#exp'>Doświadczenie</a></li>
+                <!--<li class='nav-item nav-item-clients'><a href='#clients'>Klienci</a></li>-->
+                <li class='nav-item nav-item-contact'><a href='#contact'>Kontakt</a></li>
+            </ul>
+    </nav>
+    </div>
     <div class='right-column'>
         <section class='section section-hello' id='hello'>
+            <h2 class='h2 h2--mobile'>Powitanie</h2>
             <img src='images/x.png' class='hello-x'/>
 
             <div class='hello-right-box'>
@@ -37,6 +58,7 @@
 
         </section>
         <section class='section section-about' id='about'>
+                    <h2 class='h2 h2--mobile'>O nas</h2>
             <img src='images/about.png' class='about-img'/>
 
             <div class='about-box-header'>
@@ -59,6 +81,7 @@
             </div>
         </section>
         <section class='section section-offer' id='offer'>
+              <h2 class='h2 h2--mobile'>Oferta</h2>
             <div class='offer-right-box'></div>
             <div class='offer-box-header'>
                 <h2 class='h2'><strong>Świadczymy usługi z zakresu:</strong></h2>
@@ -80,7 +103,7 @@
 
         </section>
         <section class='section section-exp' id='exp'>
-
+      <h2 class='h2 h2--mobile'>Doświadczenie</h2>
 
             <div class='exp-container'>
                 <div class='exp-box exp-box-1'>
@@ -147,6 +170,7 @@
 
         </section>-->
         <section class='section section-contact' id='contact'>
+                  <h2 class='h2 h2--mobile'>Kontakt</h2>
             <div class='contact-container'>
                 <div class='contact-box contact-box-1'>
                 <div class='contact-box-wrap'>

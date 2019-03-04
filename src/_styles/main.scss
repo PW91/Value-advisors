@@ -150,6 +150,10 @@ body {
 
 // LAYOUT:
 
+.mobile-bar {
+  display: none;
+}
+
 .section {
   width: 100%;
   //display: flex;
@@ -653,98 +657,140 @@ body {
   width: 4vw;
 }
 
-@media (max-width: 991px) {
-  // TYPO:
-
-  .h1 {
-    font-size: 6vw;
-    line-height: 6vw;
-  }
-
+@media (max-width: 1000px) {
   .h2 {
-    font-size: 3.2vw;
-  }
-
-  .h3 {
-    font-size: 4vw;
-    left: -250%;
-  }
-
-  .h4 {
-    font-size: 2.4vw;
-    margin: 2vw 0 1vw 0;
-  }
-
-  .h5 {
-    font-size: 3.5vw;
-  }
-
-  .h6 {
-    font-size: 2.5vw;
-    line-height: 4vw;
-  }
-
-  .p {
-    font-size: 4vw;
+    font-size: 5vw;
     line-height: 6vw;
-
-    .bold {
-      font-size: 4.2vw;
-      letter-spacing: 0.03vw;
-    }
   }
 
-  .bold {
-    font-size: 8vw;
+  .left-column {
+    display: none;
   }
-
-  // GRID:
 
   .right-column {
-    margin-left: 4vw;
+    width: 100vw;
+    margin: 0;
   }
 
-  // LAYOUT:
+  .section {
+    border: 1px solid red;
+    min-height: 100vh;
+  }
 
   .frame {
-    border-top-width: 60px;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
+    display: none;
   }
 
-  .section-content-wrap {
-    max-width: 50vw;
-  }
-
-  // NAV:
-
-  .nav {
-    top: 0;
-    transform: none;
+  .mobile-bar {
+    display: block;
+    height: 60px;
+    position: fixed;
+    width: 100%;
     z-index: 9999;
-    width: 100vw;
-    left: 0;
+    background-color: white;
+    top: 0;
+  }
+
+  .mobile-flex {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
   }
 
-  .nav-list {
-    margin-top: 20px;
+  .nav-list-mobile {
+    display: none;
   }
 
-  .nav-item {
-    display: inline-block;
-    margin: 0 3px;
-    font-size: 1em;
+  // HELLO
+
+  .hello-x {
+    display: none;
   }
 
-  // SECTION ABOUT:
+  .hello-right-box {
+    width: 70vw;
+    height: 90vh;
+    padding: 20vw 0;
+  }
 
-  // SECTION EXP:
+  .hello-box {
+    width: 60vw;
+    padding: 10vw;
+  }
 
-  // SECTION SKILLS:
+  .hello-img {
+    width: 100vw;
+    left: -100%;
+  }
 
-  // SECTION CONTACT:
+  // ABOUT
+
+  .about-flex-container {
+    display: block;
+    margin: 0;
+  }
+
+  .about-box {
+    width: 100%;
+  }
+
+  // OFFER
+
+  .flex-container--space-between {
+    flex-wrap: wrap;
+  }
+
+  .offer-list {
+    width: 100%;
+    order: 2;
+  }
+
+  .offer-images-container {
+    width: 100%;
+    order: 1;
+  }
+
+  .offer-right-box {
+    display: none;
+  }
+
+  .procent-img {
+    width: 30vw;
+  }
+
+  // EXP
+
+  .exp-container {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .exp-box {
+    display: block;
+    position: static;
+    width: 100%;
+    transform: none;
+    height: auto;
+  }
+
+  .exp-x {
+    display: none;
+  }
+
+  .exp-o {
+    display: none;
+  }
+
+  // CONTACT
+
+  .contact-container {
+    margin: 0;
+  }
+
+  .contact-box {
+    position: static;
+    height: auto;
+    width: 100%;
+  }
 }
